@@ -19,6 +19,7 @@ const signInPage=document.getElementById('sign-in')
 const back=document.getElementById('back-btn')
 const signInBtn=document.getElementById('sign-in-btn')
 const logBack = document.getElementById('login-back-btn')
+const siginBtn =document.getElementById('signin-btn')
 suBtn.addEventListener("click",()=>{
     
     let email=document.getElementById('sign-up-email').value
@@ -58,6 +59,13 @@ signInBtn.addEventListener('click',()=>{
     const errorMessage = error.message;
     alert(errorMessage)
   });        
+})
+
+
+
+siginBtn.addEventListener('click',()=>{
+  signUpPage.style.display='none'
+  signInPage.style.display='block'
 })
 
 back.addEventListener('click',()=>{
